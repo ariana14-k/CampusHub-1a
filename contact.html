@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+    <meta charset="UTF">
+    <meta name="viewport" content="width=content-width, initial-scale=1.0">
+
+    <title>Contact | CampusHub</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>CampusHub</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="clubs.html">Clubs</a>
+            <a href="#">About</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contact us</h2>
+        <p>Have any questions?
+            <br>
+            Send us a message.
+        </p>
+
+        <form>
+            <div>
+                <label for="name">Full name:</label>
+                <input type="text" required id="name" 
+                    name="name"
+                    minLength="3"
+                >
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" required id="email" 
+                    name="email"
+                >
+            </div>
+
+            <div>
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="">Select a subject</option>
+                    <option value="events">Events</option>
+                    <option value="clubs">Clubs</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required 
+                    minLength="10" rows="6"
+                ></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
